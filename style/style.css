@@ -1,0 +1,677 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --white: #fff;
+    --black: #000;
+    --grey: #808080;
+    --orange: #d87d4a;
+    --black-suit: #101010;
+    --gray-light: #f1f1f1;
+    --light-gray: #fafafa;
+    --light-orange: #fbaf85;
+    --dark-50: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-family: Manrope;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+.black {
+    width: 1440px;
+    padding-top: 32px;
+    height: 336px;
+    background-color: var(--black);
+}
+
+.header {
+    width: 1109px;
+    height: 28px;
+    margin-left: 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.audiophile {
+    width: 143px;
+    height: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 34px;
+    flex-direction: row;
+}
+
+a {
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: Manrope;
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 2px 2px;
+}
+
+a:hover {
+
+    background-color: var(--grey);
+    border-color: var(--white);
+    transition: 0.4s ease-in;
+}
+
+nav {
+    width: 429px;
+    height: 25px;
+    margin-right: 130px !important;
+}
+
+.line1 {
+    width: 1110px;
+    height: 1px;
+    margin-top: 36px;
+    margin-left: 165px;
+    opacity: 20%;
+    color: var(--white);
+    background-color: var(--white);
+}
+
+.headphone {
+    width: 283px;
+    height: 44px;
+    margin-top: 98px;
+    margin-left: 579px;
+    color: var(--white);
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.basket {
+    width: 39.33px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-right: 6px;
+
+
+}
+
+.basket:hover {
+    background-color: var(--grey);
+    border-color: var(--white);
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 25px auto;
+}
+
+.orange-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 32px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: var(--orange);
+}
+
+.h2 {
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    margin-bottom: 32px;
+}
+
+.paragraph {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    list-style: none;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-wrapper:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card-content {
+    max-width: 445px;
+}
+
+.data {
+    width: 1110px;
+    height: 284px;
+    margin-top: 160px;
+    margin-left: 165px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sort-1 {
+    width: 350px;
+    height: 204px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--gray-light);
+    cursor: pointer;
+}
+
+.for-2 {
+    margin-left: 30px;
+}
+
+.device-name {
+    width: 133px;
+    height: 25px;
+    margin-top: 36px;
+    margin-left: 108.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.59px;
+    letter-spacing: 1.29px;
+    text-align: center;
+}
+
+.next-page {
+    width: 65px;
+    height: 24px;
+    margin-top: 15px;
+    margin-left: 146px;
+    padding-left: 4px;
+    padding-top: 2px;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    flex-direction: row;
+}
+
+.see {
+    width: 5px;
+    height: 10px;
+    opacity: 1 !important;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    border-width: 2px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: var(--orange);
+}
+
+.next-page:hover {
+    background-color: var(--grey);
+    color: var(--white);
+    transition: 0.6s;
+}
+
+.up1 {
+    margin-top: -75px;
+    margin-bottom: -10px;
+}
+
+.up2 {
+    margin-top: -75px;
+    margin-bottom: -50px;
+
+}
+
+.up3 {
+    margin-top: -65px;
+    margin-bottom: 10px;
+
+}
+
+.next {
+    width: 1110px;
+    height: 588px;
+    margin-top: 160px;
+    margin-left: 165px;
+    display: flex;
+    flex-direction: row;
+}
+
+.part-2 {
+    width: 445px;
+    height: 295px;
+    margin-top: 147px;
+    margin-right: 125px;
+
+
+}
+
+.just-name {
+    width: 445px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    text-transform: uppercase;
+
+}
+
+.just-span {
+    width: 445px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    color: var(--orange) !important;
+    text-transform: uppercase;
+}
+
+.just-text {
+    width: 445px;
+    height: 175px;
+    top: 120px;
+    opacity: 0.5;
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+.photo {
+    width: 540px;
+    height: 588px;
+
+}
+
+.footer {
+    width: 1440px;
+    height: 365px;
+    background-color: var(--black);
+    margin-top: 160px;
+    margin-bottom: 50px !important;
+    padding-top: 75px;
+}
+
+.clash {
+    width: 1110px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.read-text {
+    width: 540px;
+    height: 100px;
+    margin-top: 36px;
+    margin-left: 165px;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white);
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+.idea {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    margin-left: 1065px;
+
+}
+
+.final {
+    width: 540px;
+    height: 25px;
+    margin-top: 56px;
+    margin-left: 165px;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+
+
+@media (max-width:1130px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .nothing{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-wrapper:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .black {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        width: 768px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .basket {
+        margin-top: -100px;
+        margin-left: 550px;
+    }
+
+    .audiophile {
+        margin-left: -410px;
+    }
+
+    .line1 {
+        margin-top: 60px;
+        margin-left: 90px;
+        width: 600px;
+    }
+
+    .headphone {
+        margin-left: 240px;
+    }
+
+    .sort-1 {
+        width: 223px;
+        height: 216px;
+    }
+
+    .up1 {
+        width: 80px;
+        height: 104px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+
+    .up2 {
+        width: 150px;
+        height: 151px;
+        margin-top: -50px;
+        margin-bottom: -39px;
+
+    }
+
+    .up3{
+        width: 103px;
+        height: 104px;
+        margin-top: -50px;
+    }
+
+    .device-name{
+        margin-left: 45px;
+    }
+
+    .next-page{
+        margin-left: 90px;
+    }
+
+    .next{
+        margin-top: 300px;
+        flex-direction: column-reverse;
+        margin-left: 270px;    
+    }
+
+    .just-name{
+        width: 573px;
+        text-align: center;
+    }
+
+    .just-text{
+        width: 573px;
+        text-align: center;
+    }
+
+    .footer{
+        width: 948px;
+        height: 400px;
+        margin-top: -150px;
+    }
+
+    .clash{
+        margin-top: 50px;
+    }
+
+    .idea{
+        margin-top: 70px;
+        margin-left: 700px;
+    }
+
+    .final{
+        margin-top: -15px;
+    }
+}
+
+@media (max-width:400px) {
+ 
+
+
+    .black {
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    .header {
+        width: 375px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .basket {
+        margin-top: -100px;
+        margin-left: 300px;
+    }
+
+    .audiophile {
+        margin-left: -150px;
+    }
+
+    .line1 {
+        margin-top: 60px;
+        margin-left: 10px;
+        width: 350px;
+    }
+
+    .headphone {
+        margin-left: 50px;
+    }
+
+    .idid{
+        width: 327px;
+        height: 352px;
+    }
+
+    .card-content{
+        width: 327px;
+    }
+    
+    .card-content * {
+        text-align: center;
+    }
+
+    .orange-button{
+        margin-left: 80px;
+    }
+
+    .data{
+        flex-direction: column;
+        gap: 70px;
+        margin-bottom: 350px;
+        margin-left: -2px;
+        margin-top: -50px;
+    }
+
+    .sort-1 {
+        width: 327px;
+        height: 216px;
+        margin-left: 5px;
+    }
+
+    .up1 {
+        width: 80px;
+        height: 104px;
+        margin-left: 15px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+
+    .up2 {
+        width: 150px;
+        height: 151px;
+        margin-left: 15px;
+        margin-top: -50px;
+        margin-bottom: -39px;
+
+    }
+
+    .up3{
+        width: 103px;
+        height: 104px;
+        margin-left: 15px;
+        margin-top: -50px;
+    }
+
+    .device-name{
+        margin-left: 105px;
+    }
+
+    .photo{
+        width: 327px;
+        height: 300px;
+        margin-top: -100px;
+        margin-left: 20px;
+    }
+
+    .next-page{
+        margin-left: -270px;
+    }
+
+    .next{
+        margin-top: 200px;
+        flex-direction: column-reverse;
+        margin-left:-20px;    
+    }
+
+    .just-name{
+        width: 320px;
+        text-align: center;
+        font-size: 28px;
+        margin-left: 40px;
+        margin-top: -50px;
+        
+    }
+
+    .just-span{
+        font-size: 28px;
+
+    }
+
+    .just-text{
+        width: 327px;
+        margin-left: 40px;
+    }
+
+    .footer{
+        width: 375px;
+        height: 654px;
+        margin-top: -20px;
+    }
+
+    .why {
+        display: flex;
+        flex-direction: column;
+        color: transparent;
+    }
+
+    .clash{
+        margin-top: 20px;
+        margin-left: -150px;
+        width: 375px;
+    }
+
+    .idea{
+        margin-top: 210px;
+        margin-left: 20px;
+    }
+
+    .final{
+        margin-top: 55px;
+        margin-left: 20px;
+    }
+}
