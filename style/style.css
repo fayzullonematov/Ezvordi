@@ -393,7 +393,7 @@ nav {
 }
 
 
-@media (max-width:1130px) {
+@media (max-width:1350px) {
     .card-wrapper {
         flex-direction: column;
     }
@@ -512,7 +512,7 @@ nav {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
  
 
 
